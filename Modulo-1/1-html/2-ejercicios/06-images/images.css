@@ -1,0 +1,13 @@
+img {
+    max-width: 100%;
+  }
+
+  section {
+    border: 1px solid #ccc;
+    padding: 0.1rem 1rem;
+    margin: 1rem 0;
+  }
+
+  section:target {
+    border-color: blue;
+  }
