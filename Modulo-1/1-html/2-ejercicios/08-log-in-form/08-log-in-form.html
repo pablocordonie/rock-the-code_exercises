@@ -17,12 +17,27 @@
   </header>
   <main>
     <header>
-      <h2>Log in</h2>
-      <p>Please log in before accessing our website</p>
+
+
     </header>
 
-    <!-- Add your log in form here -->
-
+    <form action="/log-in" method="post">
+      <fieldset>
+        <legend>
+          <h2>Log in</h2>
+        </legend>
+        <p>Please log in before accessing our website</p>
+        <div>
+          <label for="user_name">Username</label>
+          <input type="text" name="user_name" id="user_name" required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required>
+        </div>
+        <button type="submit" value="save">Log In</button>
+      </fieldset>
+    </form>
   </main>
 </body>
 
