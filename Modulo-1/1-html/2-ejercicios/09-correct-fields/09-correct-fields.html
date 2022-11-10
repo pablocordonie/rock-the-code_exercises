@@ -73,6 +73,14 @@
       <fieldset>
         <legend>True / False, with a default choice</legend>
         <!-- The server is expecting a choice between `true` and `false` only. Set it to `true` by default. -->
+        <span>
+          <label for="true">True</label>
+          <input type="radio" name="boolean" id="true" value="true" checked>
+        </span>
+        <span>
+          <label for="false">False</label>
+          <input type="radio" name="boolean" id="false" value="false">
+        </span>
       </fieldset>
       <fieldset>
         <legend>Confirm</legend>
@@ -82,6 +90,14 @@
       <fieldset>
         <legend>Yes or No</legend>
         <!-- The server is expecting a value of `yes`, or `no` for the `agree` field. -->
+        <span>
+          <label for="yes">Yes</label>
+          <input type="radio" name="other_boolean" id="yes" value="yes">
+        </span>
+        <span>
+          <label for="no">No</label>
+          <input type="radio" name="other_boolean" id="no" value="no">
+        </span>
       </fieldset>
       <div>
         <button type="submit" name="form" value="booleans">Send</button>
