@@ -111,19 +111,22 @@
       <fieldset>
         <legend>Small list of values</legend>
         <!--
-            The server is expecting one of the following values for `fruit`:
+            The server is expecting one of the following values for `fruits`:
 
               - `apples`: Apples
               - `bananas`: Bananas
               - `grapes`: Grapes
               - `plums`: Plums
           -->
-        <select name="fruit">
-          <option value="apples">Apples</option>
-          <option value="bananas">Bananas</option>
-          <option value="grapes">Grapes</option>
-          <option value="plums">Plums</option>
-        </select>
+        <div>
+          <label>Which type of fruits do you like more?</label>
+          <select name="fruits">
+            <option value="apples">Apples</option>
+            <option value="bananas">Bananas</option>
+            <option value="grapes">Grapes</option>
+            <option value="plums">Plums</option>
+          </select>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Large list of values</legend>
@@ -139,16 +142,19 @@
               - `robin`: Robins
               - `swallow`: Swallows
           -->
-        <select name="birds">
-          <option value="duck">Ducks</option>
-          <option value="eagle">Eagles</option>
-          <option value="heron">Herons</option>
-          <option value="gull">Gulls</option>
-          <option value="pigeon">Pigeons</option>
-          <option value="raven">Ravens</option>
-          <option value="robin">Robins</option>
-          <option value="swallow">Swallows</option>
-        </select>
+        <div>
+          <label>Which type of birds do you like more?</label>
+          <select name="birds">
+            <option value="duck">Ducks</option>
+            <option value="eagle">Eagles</option>
+            <option value="heron">Herons</option>
+            <option value="gull">Gulls</option>
+            <option value="pigeon">Pigeons</option>
+            <option value="raven">Ravens</option>
+            <option value="robin">Robins</option>
+            <option value="swallow">Swallows</option>
+          </select>
+        </div>
       </fieldset>
       <div>
         <button type="submit" name="form" value="single">Send</button>
@@ -169,6 +175,25 @@
               - `grapes`: Grapes
               - `plums`: Plums
           -->
+        <fieldset>
+          <legend>Which type of fruits do you like more from this list?</legend>
+          <div>
+            <input type="checkbox" id="fruits" value="apples">
+            <label for="fruits">Apples</label>
+          </div>
+          <div>
+            <input type="checkbox" id="fruits" value="bananas">
+            <label for="fruits">Bananas</label>
+          </div>
+          <div>
+            <input type="checkbox" id="fruits" value="grapes">
+            <label for="fruits">Grapes</label>
+          </div>
+          <div>
+            <input type="checkbox" id="fruits" value="plums">
+            <label for="fruits">Plums</label>
+          </div>
+        </fieldset>
       </fieldset>
       <fieldset>
         <legend>Large list of values</legend>
@@ -184,6 +209,41 @@
               - `robin`: Robins
               - `swallow`: Swallows
           -->
+        <fieldset>
+          <legend>Which type of birds do you like more from this list?</legend>
+          <div>
+            <input type="checkbox" id="birds" value="ducks">
+            <label for="birds">Ducks</label>
+          </div>
+          <div>
+            <input type="checkbox" id="birds" value="eagles">
+            <label for="birds">Eagles</label>
+          </div>
+          <div>
+            <input type="checkbox" id="birds" value="herons">
+            <label for="birds">Herons</label>
+          </div>
+          <div>
+            <input type="checkbox" id="birds" value="gulls">
+            <label for="birds">Gulls</label>
+          </div>
+          <div>
+            <input type="checkbox" id="birds" value="pigeons">
+            <label for="birds">Pigeons</label>
+          </div>
+          <div>
+            <input type="checkbox" id="birds" value="ravens">
+            <label for="birds">Ravens</label>
+          </div>
+          <div>
+            <input type="checkbox" id="birds" value="robins">
+            <label for="birds">Robins</label>
+          </div>
+          <div>
+            <input type="checkbox" id="birds" value="swallows">
+            <label for="birds">Swallows</label>
+          </div>
+        </fieldset>
       </fieldset>
       <div>
         <button type="submit" name="form" value="multiple">Send</button>
