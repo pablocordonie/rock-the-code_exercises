@@ -259,24 +259,28 @@
         <!--
             The server is expecting a hidden `signed=true` pair here.
           -->
+        <input type="hidden" id="signed" name="signed" value="true">
       </fieldset>
       <fieldset>
         <legend>File(s)</legend>
         <!--
             The server is expecting at least one file here, with the name of `photos`.
           -->
+        <input type="file" id="photos" accept=".jpg,.png,.webp">
       </fieldset>
       <fieldset>
         <legend>Range</legend>
         <!--
             The server is expecting at a numerical value for `bearing` between 0 and 359
           -->
+        <input type="range" id="bearing" name="bearing" value="150" min="0" max="359">
       </fieldset>
       <fieldset>
         <legend>Colour</legend>
         <!--
             The server is expecting at a colour value for `background_colour`
           -->
+        <input type="color" id="background-color" name="background-color" value="#e66100">
       </fieldset>
       <div>
         <button type="submit" name="form" value="other">Send</button>
