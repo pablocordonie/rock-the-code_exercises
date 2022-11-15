@@ -14,8 +14,7 @@ p {
 .first {
 
 }
-
-.second {
-
-}
 */
+.second {
+    border-bottom: 1px solid #c92a2a; 
+}
