@@ -3,11 +3,11 @@
 * {
   font-family: "Anek Telugu", sans-serif;
 }
-/*
-body {
 
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
 }
-*/
+
 h1 {
   background-color: aquamarine;
 }
