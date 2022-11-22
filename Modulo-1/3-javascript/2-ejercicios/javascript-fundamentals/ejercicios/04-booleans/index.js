@@ -1,39 +1,38 @@
 // 1. Añade a las siguientes tres variables cualquier valor que se considere "truthy". Usa valores diferentes para cada caso.
-var firstTruthyValue;
-var secondTruthyValue;
-var thirdTruthyValue;
+var firstTruthyValue = 1;
+var secondTruthyValue = "algo de contenido";
+var thirdTruthyValue = true;
 
 // 2. Añade a las siguientes tres variables cualquier valor que se considere "falsy". Usa valores diferentes para cada caso.
-var firstFalsyValue;
-var secondFalsyValue;
-var thirdFalsyValue;
+var firstFalsyValue = 0;
+var secondFalsyValue = "";
+var thirdFalsyValue = false;
 
 // 3. Dadas las siguientes variables responde, justo debajo de cada una, si dicha comparación sería "true" o "false".
 
-var firstComparison = (0 < 1);
-var firstAnswer;
+var firstComparison = 0 < 1;
+var firstAnswer = true;
 
-var secondComparison = (0 == '0');
-var secondAnswer;
+var secondComparison = 0 == "0";
+var secondAnswer = true;
 
-var thirdComparison = (0 === '0');
-var thirdAnswer;
+var thirdComparison = 0 === "0";
+var thirdAnswer = false;
 
-var fourthComparison = (0 != '0');
-var fourthAnswer;
+var fourthComparison = 0 != "0";
+var fourthAnswer = false;
 
-var fifthComparison = (0 !== '0');
-var fifthAnswer;
+var fifthComparison = 0 !== "0";
+var fifthAnswer = true;
 
-var sixthComparison = (0);
-var sixthAnswer;
+var sixthComparison = 0;
+var sixthAnswer = false;
 
-var seventhComparison = ('0');
-var seventhAnswer;
+var seventhComparison = "0";
+var seventhAnswer = true;
 
-var eigththComparison = (6 >= '6');
-var eigththAnswer;
-
+var eigththComparison = 6 >= "6";
+var eigththAnswer = true;
 
 // ///////////////////////////////////////////////////////////////
 // ⬇️ NO TOCAR ESTA PARTE O ROMPERÁS LOS TESTS ⬇️
@@ -51,6 +50,6 @@ export default {
   fifthAnswer,
   sixthAnswer,
   seventhAnswer,
-  eigththAnswer
+  eigththAnswer,
 };
 // ///////////////////////////////////////////////////////////////
