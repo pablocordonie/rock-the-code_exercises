@@ -1,5 +1,5 @@
-function main(customValue) {
-  var ex1 = '';
+function main(customValue, customCoin) {
+  var ex1 = "";
   var ex2 = 0;
   // Antes de comenzar, considera que tendrás disponible las variables customValue y customCoin,
   // que obtendrán los valores que te indiquemos en el enunciado de cada ejercicio:
@@ -9,11 +9,17 @@ function main(customValue) {
   // Completa el switch para cubrir los siguientes casos:
   // 'coche' => 'car' | 'avión' => 'plane' | 'moto' => 'motorbike' | otro valor cualquiera => 'none'
   switch (customValue) {
-    case 'coche':
-      ex1 = 'car';
+    case "coche":
+      ex1 = "car";
+      break;
+    case "avión":
+      ex1 = "plane";
+      break;
+    case "moto":
+      ex1 = "motorbike";
       break;
     default:
-      ex1 = '';
+      ex1 = "none";
   }
 
   // 2. Supón que tenemos una máquina de cambio de divisas. Dado un valor number cualquiera para
@@ -24,11 +30,20 @@ function main(customValue) {
   // 'USD' => 1 | 'EUR' => 1.05 | 'GBP' => 1.10 | 'CAD' => 0.98
   // Si customCoin no tiene el valor de estas divisas, asigna a ex2 el valor actual de customValue
   switch (customCoin) {
-    case 'USD':
+    case "USD":
       ex2 = customValue * 1;
       break;
+    case "EUR":
+      ex2 = customValue * 1.05;
+      break;
+    case "GBP":
+      ex2 = customValue * 1.1;
+      break;
+    case "CAD":
+      ex2 = customValue * 0.98;
+      break;
     default:
-      ex2 = '';
+      ex2 = customValue;
   }
 
   return {
