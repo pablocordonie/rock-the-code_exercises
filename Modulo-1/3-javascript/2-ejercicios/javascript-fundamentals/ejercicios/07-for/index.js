@@ -9,8 +9,10 @@ function main(customString, customNumber) {
   // cualquiera de las vocales 'a', 'e', 'i', 'o', 'u'
   // Por ejemplo: Si customString es alpaca => ex1 debe valer 3 porque hay 3 letras a
   // Otro ejemplo: Si customString es clarinete => ex1 debe valer 4 porque hay 4 vocales
-  for (let i = 0; i < customString.length; i++) {
-    var letter = customString[i];
+
+  const string = String(customString);
+  for (let i = 0; i < string.length; i++) {
+    var letter = string[i];
 
     if (
       letter === "a" ||
@@ -29,8 +31,9 @@ function main(customString, customNumber) {
   // Por ejemplo: si customNumber es 4 y su triple es 12 => ex2 debe valer 4 porque los impares son 5, 7, 9 y 11
   // Otro ejemplo: si customNumber es 7 y su triple es 21 => ex2 debe valer 8 porque hay 8 número impares entre ambos inclusive
 
-  if (customNumber >= 1) {
-    for (let i = customNumber; i < customNumber * 3; i++) {
+  const randomNumber = Number(customNumber);
+  if (randomNumber >= 1) {
+    for (let i = randomNumber; i < randomNumber * 3; i++) {
       if (i % 2 !== 0) {
         ex2 += 1;
       }
