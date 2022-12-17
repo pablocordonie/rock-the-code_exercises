@@ -1,14 +1,14 @@
-import index from "../soluciones/promesas";
+import index from './index';
 
 describe("Ejercicios de Promesas", () => {
   const log = jest.spyOn(global.console, "log");
   it("espero encontrar una promesa que se resuelva con el string 'me he resuelto'", () => {
-    return index.promise.then((data) => expect(data).toEqual("me he resuelto"));
+    return index.promise.then((data) => expect(data).toEqual("me he resuelto!"));
   });
 
   it("espero encontrar una promesa que se rechace con el string 'me han rechazado'", () => {
     return index.promiseError.catch((data) =>
-      expect(data).toEqual("me han rechazado")
+      expect(data).toEqual("me han rechazado!")
     );
   });
 
