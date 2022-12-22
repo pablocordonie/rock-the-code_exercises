@@ -96,3 +96,46 @@ z = 5;
 x === y * z;
 
 console.log(x);
+
+// Iteración #4: Arrays
+
+// 4.1 Consigue el valor "HULK" del array de avengers y muestralo por consola.
+
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+
+console.log(avengers[0]);
+
+// 4.2 Cambia el primer elemento de avengers a "IRONMAN".
+
+avengers[0] = 'IRONMAN';
+
+// 4.3 Alert numero de elementos en el array usando la propiedad correcta de Array.
+
+avengers[2] = 'BLACK PANTHER';
+
+alert(avengers.length);
+
+/* 4.4 Añade 2 elementos al array: "Morty" y "Summer". 
+Muestra en consola el último personaje del array. */
+
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
+
+rickAndMortyCharacters.push('Morty', 'Summer');
+
+console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1]);
+
+// 4.5 Elimina el último elemento del array y muestra el primero y el último por consola.
+
+const rickAndMortyCharacters_2 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+
+rickAndMortyCharacters_2.pop();
+
+console.log(rickAndMortyCharacters_2[0], rickAndMortyCharacters_2[rickAndMortyCharacters_2.length - 1]);
+
+// 4.6 Elimina el segundo elemento del array y muestra el array por consola.
+
+const rickAndMortyCharacters_3 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+
+rickAndMortyCharacters_3.splice(1, 1);
+
+console.log(rickAndMortyCharacters_3);
