@@ -1,0 +1,67 @@
+// Iteración #1: Buscar el máximo
+
+// Completa la función que tomando dos números como argumento devuelva el más alto.
+
+function sum(numberOne, numberTwo) {
+    if (numberOne > numberTwo) {
+        return `El número ${numberOne} es el número más alto`;
+    } else {
+        return `El número ${numberTwo} es el número más alto`;
+    }
+}
+
+sum(3, 6);
+
+// Iteración #2: Buscar la palabra más larga
+
+/* Completa la función que tomando un array de strings como argumento devuelva el más largo, en caso de que dos strings tenga la misma longitud deberá devolver el primero. */
+
+const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
+
+function findLongestWord(arr) {
+
+    let longestWord = arr[0];
+    for (let i = 1; i < arr.length; i += 1) {
+        if (arr[i].length > longestWord.length) {
+            longestWord = arr[i];
+        }
+    }
+    return longestWord;
+}
+
+findLongestWord(avengers);
+
+// Iteración #3: Calcular la suma
+
+/* Calcular una suma puede ser tan simple como iterar sobre un array y sumar cada uno de los elementos.
+Implemente la función denominada sumNumbers que toma un array de números como argumento y devuelve la suma de todos los números de la matriz. */
+
+const numbers = [1, 2, 3, 5, 45, 37, 58];
+
+function sumNumbers(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i += 1) {
+        let number = arr[i];
+        sum = sum + number;
+    }
+    return sum;
+}
+
+sumNumbers(numbers);
+
+// Iteración #4: Calcular el promedio
+
+/* Calcular un promedio es una tarea extremadamente común. */
+
+const moreNumbers = [12, 21, 38, 5, 45, 37, 6];
+
+function average(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i += 1) {
+        let number = arr[i];
+        sum = sum + number;
+    }
+    return sum / arr.length;
+}
+
+average(moreNumbers);
