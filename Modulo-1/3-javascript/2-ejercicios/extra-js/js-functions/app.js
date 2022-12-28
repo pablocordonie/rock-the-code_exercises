@@ -115,3 +115,64 @@ function removeDuplicates(arr) {
 }
 
 removeDuplicates(foods);
+
+// Iteración #7: Buscador de nombres
+
+/* Crea una función que reciba por parámetro un array y el valor que desea comprobar que existe dentro de dicho array - comprueba si existe el elemento, en caso que existan nos devuelve un true y la posición de dicho elemento y por la contra un false. */
+
+const names = [
+    'Peter',
+    'Steve',
+    'Tony',
+    'Natasha',
+    'Clint',
+    'Logan',
+    'Xabier',
+    'Bruce',
+    'Peggy',
+    'Jessica',
+    'Marc'
+];
+
+function finderName(arr, value) {
+    for (let i = 0; i < arr.length; i += 1) {
+        if (arr[i] === value) {
+            return `${true}, ${arr[i]} está en la ${i + 1}th position del array`;
+        }
+    }
+    return `${false}, no existe ningún nombre con el valor proporcionado`
+}
+
+finderName(names, 'Logan');
+
+// Iteration #8: Contador de repeticiones
+
+/* Crea una función que nos devuelva el número de veces que se repite cada una de las palabras que lo conforma. */
+
+const counterWords = [
+    'code',
+    'repeat',
+    'eat',
+    'sleep',
+    'code',
+    'enjoy',
+    'sleep',
+    'code',
+    'enjoy',
+    'rock',
+    'code'
+];
+
+function repeatCounter(arr) {
+    let counter = {};
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] in counter) {
+            counter[arr[i]]++;
+        } else {
+            counter[arr[i]] = 1;
+        }
+    }
+    return counter;
+}
+
+repeatCounter(counterWords);
