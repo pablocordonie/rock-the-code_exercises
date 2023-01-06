@@ -60,9 +60,48 @@ document.body.appendChild(firstDiv);
 
 const secondDiv = document.createElement('div');
 
-document.body.appendChild(secondDiv);
-
-for (let i = 0; i < 6; i++) {
-    const newP = document.createElement('p');
-    secondDiv.appendChild(newP);
+const makeSixPsInsideDiv = (div) => {
+    for (let i = 0; i < 6; i++) {
+        const newP = document.createElement('p');
+        div.appendChild(newP);
+    }
+    return div;
 }
+
+document.body.appendChild(makeSixPsInsideDiv(secondDiv));
+
+// 2.4 Inserta dinamicamente con javascript en un html una p con el texto 'Soy dinámico!'.
+
+const p = document.createElement('p');
+
+p.innerText = 'Soy dinámico!';
+
+document.body.appendChild(p);
+
+// 2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
+
+const h2 = document.querySelector('h2.fn-insert-here');
+
+h2.innerText = 'Wubba Lubba dub dub';
+
+/* 2.6 Basandote en el siguiente array crea una lista ul > li con los textos del array. */
+
+const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
+
+const ul = document.createElement('ul');
+
+const makeLiElementsInsideUl = (ulElement) => {
+
+    for (let i = 0; i < apps.length; i++) {
+        const app = apps[i];
+        const li = document.createElement('li');
+        li.innerText = app;
+
+        ulElement.appendChild(li);
+    }
+
+    return ulElement;
+
+}
+
+document.body.appendChild(makeLiElementsInsideUl(ul));
