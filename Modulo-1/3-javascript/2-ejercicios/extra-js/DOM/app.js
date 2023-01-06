@@ -105,3 +105,47 @@ const makeLiElementsInsideUl = (ulElement) => {
 }
 
 document.body.appendChild(makeLiElementsInsideUl(ul));
+
+// 2.7 Elimina todos los nodos que tengan la clase .fn-remove-me
+
+const paragraphsWithClasses = document.querySelectorAll('.fn-remove-me');
+
+const deleteParagraphs = (arr) => {
+
+    for (const paragraph of arr) {
+        paragraph.remove();
+    }
+}
+
+deleteParagraphs(paragraphsWithClasses);
+
+/* 2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. 
+    Recuerda que no solo puedes insertar elementos con .appendChild. */
+
+const newParagraph = document.createElement('p');
+
+newParagraph.innerText = 'Voy en medio!';
+
+const emptyRandomDiv = document.querySelector('div');
+
+emptyRandomDiv.after(newParagraph);
+
+// 2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
+
+const divsWithClasses = document.querySelectorAll('div.fn-insert-here');
+
+const insertPInsideDivWithClass = (arr) => {
+
+    for (let i = 0; i < arr.length; i++) {
+        const newParagraph_2 = document.createElement('p');
+        newParagraph_2.innerText = 'Voy dentro!';
+        const div = arr[i];
+        div.appendChild(newParagraph_2);
+    }
+}
+
+insertPInsideDivWithClass(divsWithClasses);
+
+
+
+
