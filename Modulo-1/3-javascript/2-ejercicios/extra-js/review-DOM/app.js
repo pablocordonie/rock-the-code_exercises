@@ -83,3 +83,22 @@ button.addEventListener('click', removeTheLastDiv);
 
 document.body.appendChild(button);
 
+/* 1.6 Basandote en el ejercicio anterior. Crea un botón para cada uno de los 
+elementos de las listas que elimine ese mismo elemento del html. */
+
+
+for (const country of countries_2) {
+
+    const template = document.createElement('div');
+    template.innerHTML = `<h4>${country.title}</h4><img src="${country.imgUrl}" alt="${country.title}" />`;
+
+    const button = document.createElement('button');
+    button.innerText = 'Delete';
+    template.appendChild(button);
+
+    button.addEventListener('click', () => {
+        template.remove();
+    });
+
+    document.body.appendChild(template);
+}
