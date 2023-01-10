@@ -66,3 +66,20 @@ const createTitleAndImageInsideNewDivs = (arr) => {
 }
 
 createTitleAndImageInsideNewDivs(countries_2);
+
+/* 1.5 Basandote en el ejercicio anterior. Crea un botón que elimine el último 
+elemento de la lista. */
+
+const removeTheLastDiv = () => {
+    const allDivs = document.querySelectorAll('div');
+    allDivs[allDivs.length - 1].remove();
+}
+
+const button = document.createElement('button');
+
+button.innerText = 'Delete last element';
+
+button.addEventListener('click', removeTheLastDiv);
+
+document.body.appendChild(button);
+
