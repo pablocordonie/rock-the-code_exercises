@@ -38,3 +38,15 @@ const createLiElementsInsideAnExistingDiv = (arr) => {
 
 const dataFunctionDiv = document.querySelector('[data-function="printHere"]');
 dataFunctionDiv.appendChild(createLiElementsInsideAnExistingDiv(cars));
+
+/* 1.4 Crea dinamicamente en el html una lista de div que contenga un elemento 
+h4 para el titulo y otro elemento img para la imagen. */
+
+const countries_2 = [
+    { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=1' },
+    { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=2' },
+    { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=3' },
+    { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=4' },
+    { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=5' }
+];
+
