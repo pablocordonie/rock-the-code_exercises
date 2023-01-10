@@ -50,3 +50,19 @@ const countries_2 = [
     { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=5' }
 ];
 
+const createTitleAndImageInsideNewDivs = (arr) => {
+
+    for (const country of arr) {
+
+        const divElement = document.createElement('div');
+
+        divElement.innerHTML = `
+        <h4>${country.title}</h4>
+        <img src="${country.imgUrl}" />
+        `;
+
+        document.body.appendChild(divElement);
+    }
+}
+
+createTitleAndImageInsideNewDivs(countries_2);
